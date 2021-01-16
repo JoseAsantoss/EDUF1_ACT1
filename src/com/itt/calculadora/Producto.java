@@ -1,5 +1,5 @@
 package com.itt.calculadora;
 
-public class Multiplicacion {
+public class Producto {
 
 }
