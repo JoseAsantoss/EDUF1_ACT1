@@ -5,54 +5,49 @@ import java.util.Locale;
 
 public class Suma {
 	
-	private double num1;
-	private double num2;
-	private double num3;
-	private double acum;
-	private double result;
+	private static double result;
+	private static double acum;
 	
 	public Suma() {
-		
-		this.num1 = 0;
-		this.num2 = 0;
-		this.num3 = 0;
-		this.acum = 0;
-		this.result = 0;
+	
+		result = 0;
+		acum = 0;
 		
 	}
 	
-	public String sumReales(double num1, double num2) {
+	public static String sumReales(double num1, double num2) {
 		 
-		this.result = num1 + num2;
+		result = num1 + num2;
 		
 		NumberFormat nf = NumberFormat.getInstance(new Locale("es", "ES"));
 		
-		return nf.format(this.result);
+		return nf.format(result);
 		
 	}
 	
-	public String sumEntero(int num1, int num2) {
+	public static String sumEntero(int num1, int num2) {
 		 
-		this.result = num1 + num2;
+		result = num1 + num2;
 		
 		NumberFormat nf = NumberFormat.getInstance(new Locale("es", "ES"));
 		
-		return  nf.format(this.result);
+		return  nf.format(result);
 		
 	}
 	
-	public String sumTresReales(double num1, double num2, double num3) {
+	public static String sumTresReales(double num1, double num2, double num3) {
 		
-		this.result = num1 + num2 + num3;
+		result= num1 + num2 + num3;
 		
 		NumberFormat nf = NumberFormat.getInstance(new Locale("es", "ES"));
 		
-		return nf.format(this.result);
+		return nf.format(result);
 	}
 	
-	public void sumAcumulado(double num) {
+	public static void sumAcumulado(double num) {
+
+		acum = acum + num;
 		
-		this.acum = acum + num;
 	}
 	
 }
