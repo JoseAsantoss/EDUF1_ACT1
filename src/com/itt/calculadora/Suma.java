@@ -5,7 +5,9 @@ import java.util.Locale;
 
 public class Suma {
 	
-	private double num1, num2, num3;
+	private double num1;
+	private double num2;
+	private double num3;
 	private double acum;
 	private double result;
 	
