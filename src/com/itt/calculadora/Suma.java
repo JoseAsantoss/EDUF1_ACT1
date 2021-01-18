@@ -44,7 +44,7 @@ public class Suma {
 		return nf.format(result);
 	}
 	
-	public static void sumAcumulado(double num) {
+	public void sumAcumulado(double num) {
 
 		acum = acum + num;
 		
