@@ -1,7 +1,6 @@
 package com.itt.calculadora;
 
-import java.text.NumberFormat;
-import java.util.Locale; 
+
 /**
  * Clase Suma:
  * 	Esta clase estática realiza las operaciones básicas de una suma.
@@ -16,13 +15,9 @@ import java.util.Locale;
  */
 public class Suma {
 	
-	private static double result;
-	private static double acum;
 	
 	public Suma() {
 	
-		result = 0;
-		acum = 0;
 		
 	}
 	
@@ -37,13 +32,9 @@ public class Suma {
 	 * 		devuelve formateado al sistema Español "." para los 
 	 * 		millares "," para los decimales.
 	 */
-	public static String sumReales(double num1, double num2) {
-		 
-		result = num1 + num2;
+	public static double sumReales(double num1, double num2) {
 		
-		NumberFormat nf = NumberFormat.getInstance(new Locale("es", "ES"));
-		
-		return nf.format(result);
+		return 0.00d;
 		
 	}
 	
@@ -58,13 +49,10 @@ public class Suma {
 	 * 		devuelve formateado al sistema Español "." para los 
 	 * 		millares "," para los decimales.
 	 */
-	public static String sumEntero(int num1, int num2) {
+	public static int sumEntero(int num1, int num2) {
 		 
-		result = num1 + num2;
 		
-		NumberFormat nf = NumberFormat.getInstance(new Locale("es", "ES"));
-		
-		return  nf.format(result);
+		return  0;
 		
 	}
 	
@@ -81,13 +69,10 @@ public class Suma {
 	 * 		devuelve formateado al sistema Español "." para los 
 	 * 		millares "," para los decimales.
 	 */
-	public static String sumTresReales(double num1, double num2, double num3) {
+	public static double sumTresReales(double num1, double num2, double num3) {
 		
-		result= num1 + num2 + num3;
 		
-		NumberFormat nf = NumberFormat.getInstance(new Locale("es", "ES"));
-		
-		return nf.format(result);
+		return 0.00d;
 	}
 	
 	/**
@@ -99,7 +84,7 @@ public class Suma {
 	 */
 	public static void sumAcumulado(double num) {
 
-		acum = acum + num;
+		//TODO Aquí el código que tiene que ir acumulando la suma.
 		
 	}
 	/**
@@ -108,7 +93,8 @@ public class Suma {
 	 * 		Devuelve el valor acumulado de la suma.
 	 */
 	public static double getAcum() {
-		return acum;
+		
+		return 0;
 	}
 	
 }
