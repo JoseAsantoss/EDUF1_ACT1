@@ -24,7 +24,7 @@ public class Resta {
 	}
 
 	/**
-	 * Devuelve la resta de sus argumentos
+	 * Realiza la resta de sus argumentos
 	 * 
 	 * @param num1 este es el minuendo de la resta
 	 * @param num2 este es el sustraendo de la resta
@@ -36,7 +36,7 @@ public class Resta {
 	}
 
 	/**
-	 * Devuelve la resta de sus argumentos
+	 * Realiza la resta de sus argumentos
 	 * 
 	 * @param num1 este es el minuendo de la resta
 	 * @param num2 este es el sustraendo de la resta
@@ -50,12 +50,12 @@ public class Resta {
 	}
 
 	/**
-	 * Devuelve el resultado de restar al primer parámetro los otros dos
+	 * Realiza la resta del primer parámetro menos los otros dos
 	 * 
 	 * @param num1 este es el minuendo de la resta
 	 * @param num2 este es el primer sustraendo de la resta
 	 * @param num3 este es el segundo sustraendo de la resta
-	 * @return devuelve la resta de (num1 menos num2) menos num3.
+	 * @return devuelve el resultado de la resta de (num1 menos num2) menos num3.
 	 */
 	public static double resTresReales(double num1, double num2, double num3) {
 
@@ -64,7 +64,7 @@ public class Resta {
 
 	/**
 	 * 
-	 * @param num parámetro con el resultado de la resta que queremos ir acumulando
+	 * @param num parámetro con el resultado de las restas que queremos ir acumulando
 	 */
 	public void resAcumulado(double num) {
 
@@ -74,9 +74,11 @@ public class Resta {
 	/**
 	 * 
 	 * @return
-	 * 		Devuelve el valor de las restas que hemos ido acumulando con el método resAcumulado.
+	 * 		Devuelve el valor de las restas que hemos ido acumulando con el método @see resAcumulado.
 	 */
 	public static double getAcum() {
 		return acum;
 	}
+	
+	
 }
