@@ -96,6 +96,9 @@ public class Suma {
 	 * @exception
 	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un car&aacutecter lanzar&aacute una excepci&oacuten
 	 * 		indicando el error
+	 * @exception
+	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero negativo lanzar&aacute una excepci&oacuten
+	 * 		indicando el error
 	 */
 	public static double sumReales(double num1, double num2) {
 		
@@ -114,6 +117,9 @@ public class Suma {
 	 * 		El resultado de la suma de num1 y num2.
 	 * @exception
 	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un car&aacutecter lanzar&aacute una excepci&oacuten
+	 * 		indicando el error
+	 * @exception
+	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero negativo lanzar&aacute una excepci&oacuten
 	 * 		indicando el error
 	 */
 	public static int sumEntero(int num1, int num2) {
@@ -135,6 +141,9 @@ public class Suma {
 	 * @exception
 	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un car&aacutecter lanzar&aacute una excepci&oacuten
 	 * 		indicando el error
+	 * @exception
+	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero negativo lanzar&aacute una excepci&oacuten
+	 * 		indicando el error
 	 */
 	public static double sumTresReales(double num1, double num2, double num3) {
 				
@@ -150,7 +159,12 @@ public class Suma {
 	 * @exception
 	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un car&aacutecter lanzar&aacute una excepci&oacuten
 	 * 		indicando el error
+	 * @exception
+	 * 		IOException Si el n&uacutemero pasado como argumento es negativo lanzar&aacute una excepci&oacuten
+	 * 		indicando el error
 	 */
+	
+	//Esto es un comentario con acentos en la ó
 	public static void sumAcumulado(double num) {
 
 		//TODO Aqu&iacute el c&oacutedigo que tiene que ir acumulando la suma.
@@ -160,9 +174,6 @@ public class Suma {
 	 * M&eacutetodo est&aacutetico que no recibe par&aacutemetros y devuelve el valor acumulado de la suma.
 	 * @return
 	 * 		Devuelve el acumulado de la suma.
-	 * @exception
-	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un car&aacutecter lanzar&aacute una excepci&oacuten
-	 * 		indicando el error
 	 */
 	public static double getAcum() {
 		
