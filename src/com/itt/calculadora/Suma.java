@@ -153,7 +153,9 @@ public class Suma {
 	
 	/**
 	 * M&eacutetodo est&aacutetico que acumula el n&uacutemero que se vaya pasando 
-	 * como par&aacutemetro, con el fin de realizar una suma acumulada.
+	 * como par&aacutemetro, con el fin de realizar una suma acumulada.<br>
+	 * Para consultar el valor acumulado de la suma usamos:
+	 * {@link Suma#getAcum()}
 	 * @param num
 	 * 		N&uacutemero de tipo real 
 	 * @exception
@@ -173,7 +175,8 @@ public class Suma {
 	/**
 	 * M&eacutetodo est&aacutetico que no recibe par&aacutemetros y devuelve el valor acumulado de la suma.
 	 * @return
-	 * 		Devuelve el acumulado de la suma.
+	 * 		Devuelve el acumulado de la suma que se ha ido acumulando.
+	 * 		{@link Suma#sumAcumulado(double)}
 	 */
 	public static double getAcum() {
 		
