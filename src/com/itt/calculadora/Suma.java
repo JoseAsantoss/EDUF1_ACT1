@@ -107,12 +107,12 @@ public class Suma {
 	}
 	
 	/**
-	 * M&eacutetodo est&aacutetico que recibe dos números enteros como argumentos y 
+	 * M&eacutetodo est&aacutetico que recibe dos n&uacutemero enteros como argumentos y 
 	 * devuelve la suma de ambos.
 	 * @param num1
-	 * 		Sumando que recibe un número entero
+	 * 		Sumando que recibe un n&uacutemero entero
 	 * @param num2
-	 * 		Sumando que recibe un número entero
+	 * 		Sumando que recibe un n&uacutemero entero
 	 * @return
 	 * 		El resultado de la suma de num1 y num2.
 	 * @exception
@@ -155,7 +155,7 @@ public class Suma {
 	 * M&eacutetodo est&aacutetico que acumula el n&uacutemero que se vaya pasando 
 	 * como par&aacutemetro, con el fin de realizar una suma acumulada.<br>
 	 * Para consultar el valor acumulado de la suma usamos:
-	 * {@link Suma#getAcum()}
+	 * {@link #getAcum()}
 	 * @param num
 	 * 		N&uacutemero de tipo real 
 	 * @exception
@@ -176,7 +176,7 @@ public class Suma {
 	 * M&eacutetodo est&aacutetico que no recibe par&aacutemetros y devuelve el valor acumulado de la suma.
 	 * @return
 	 * 		Devuelve el acumulado de la suma que se ha ido acumulando.
-	 * 		{@link Suma#sumAcumulado(double)}
+	 * 		{@link #sumAcumulado(double)}
 	 */
 	public static double getAcum() {
 		
