@@ -10,7 +10,6 @@ package com.itt.calculadora;
  * en la aplicaci&oacuten</p>
  * <hr/>
  * <h3>Metodos que implementa:</h3>
- * <br>
  * <p>
  * 	<ol>
  * 			<li><h3><em>{@link #Suma()}:</em></h3>
@@ -61,12 +60,12 @@ package com.itt.calculadora;
  *<h2>Casos especiales:</h2>
  *<ol>
  *	<li><p>Utilizaci&oacuten de n&uacutemeros negativos no permitidos:</p>
- * 		<dd>Si uno de los n&uacutemeros pasados es negativo se lanzara una excepci&oacuten
- *		ya que realiza operaciones b&aacutesicas de suma de n&uacutemeros positivos.</dd>
+ * 		Si uno de los n&uacutemeros pasados es negativo se lanzara una excepci&oacuten
+ *		ya que realiza operaciones b&aacutesicas de suma de n&uacutemeros positivos.
  * 	</li>
  * 	<li><p>Usar caracteres en vez de n&uacutemeros:
- * 		<dd>Si en vez de n&uacutemeros como argumentos se pasan caracteres, se lanzar&aacute
- * 		una excepci&oacuten ya que lo &uacutenico que est&aacuten permitidos son n&uacutemeros.</dd>
+ * 		Si en vez de n&uacutemeros como argumentos se pasan caracteres, se lanzar&aacute
+ * 		una excepci&oacuten ya que lo &uacutenico que est&aacuten permitidos son n&uacutemeros.
  * 	</li>
  *</ol>
  *
