@@ -69,7 +69,6 @@ package com.itt.calculadora;
  * 	</li>
  *</ol>
  *
- * @category Funciones matem&aacuteticas
  * @version 1.0
  * @since 20/01/2021
  * @author Ra&uacutel Ruiz Sanz
