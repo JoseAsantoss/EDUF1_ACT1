@@ -1,16 +1,14 @@
 package com.itt.calculadora;
 
 /**
- * 
  * <p>Clase est&aacutetica que realiza las operaciones b&aacutesicas de multiplicaci&oacuten en una calculadora: <br>
- * <ul><li>Producto de dos n&uacutemeros reales.</li>
- * <li>Producto de dos n&uacutemeros enteros.</li>
- * <li>Producto de tres n&uacutemeros reales.</li>
- * <li>Potencia.</li></ul>
- * <hr>
+ * &nbsp&nbsp- Producto de dos n&uacutemeros reales<br>
+ * &nbsp&nbsp- Producto de dos n&uacutemeros enteros<br>
+ * &nbsp&nbsp- Producto de tres n&uacutemeros reales<br>
+ * &nbsp&nbsp- Potencia<br>
  * No est&aacute permitido usar n&uacutemeros negativos en la multiplicaci&oacuten. Su uso inducir&aacute a un error
  * en la aplicaci&oacuten.</p>
- * 
+ * <hr/>
  * <h3>M&eacutetodos que implementa:</h3>
  * <p>
  * 	<ol>
@@ -58,7 +56,7 @@ package com.itt.calculadora;
  * 		Si uno de los n&uacutemeros pasados es negativo se lanzara una excepci&oacuten
  *		ya que realiza operaciones b&aacutesicas de multiplicaci&oacuten de n&uacutemeros positivos.
  * 	</li>
- * 	<li><p>Usar caracteres en vez de n&uacutemeros:
+ * 	<li><p>Usar caracteres en vez de n&uacutemeros:</p>
  * 		Si en vez de n&uacutemeros como argumentos se pasan caracteres, se lanzar&aacute
  * 		una excepci&oacuten ya que lo &uacutenico que est&aacuten permitidos son n&uacutemeros.
  * 	</li>
