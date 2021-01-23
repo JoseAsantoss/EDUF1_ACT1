@@ -2,25 +2,93 @@ package com.itt.calculadora;
 
 /**
  * 
- * La clase <b>Producto</b> implementa 4 métodos propios de la multiplicación.
- * <p>Cada método retorna el resultado de la operación correspondiente.</p>
+ * <p>Clase est&aacutetica que realiza las operaciones b&aacutesicas de multiplicaci&oacuten en una calculadora: <br>
+ * <ul><li>Producto de dos n&uacutemeros reales.</li>
+ * <li>Producto de dos n&uacutemeros enteros.</li>
+ * <li>Producto de tres n&uacutemeros reales.</li>
+ * <li>Potencia.</li></ul>
+ * <hr>
+ * No est&aacute permitido usar n&uacutemeros negativos en la multiplicaci&oacuten. Su uso inducir&aacute a un error
+ * en la aplicaci&oacuten.</p>
+ * 
+ * <h3>M&eacutetodos que implementa:</h3>
+ * <p>
+ * 	<ol>
+ * 			<li><h3><em>{@link #Producto()}:</em></h3>
+ * 				<ul>
+ * 					<li>
+ * 						Constructor por defecto que no recibe argumentos.
+ * 					</li>
+ * 				</ul>
+ * 			</li>
+ * 			<li><h3><em>{@link #prodReales(double, double)}:</em></h3>
+ * 				<ul>
+ * 					<li>
+ * 						M&eacutetodo para el producto de dos n&uacutemeros reales.
+ * 					</li>
+ * 				</ul>
+ * 			</li>
+ * 			<li><h3><em>{@link #prodEnteros(int, int)}:</em></h3>
+ * 				<ul>
+ * 					<li>
+ * 						M&eacutetodo para el producto de dos n&uacutemeros enteros.
+ * 					</li>
+ * 				</ul>
+ * 			</li>
+ * 			<li><h3><em>{@link #prodReales(double, double, double)}:</em></h3>
+ * 				<ul>
+ * 					<li>
+ * 						M&eacutetodo para el producto de tres n&uacutemeros reales.
+ * 					</li>
+ * 				</ul>
+ * 			</li>
+ * 			<li><h3><em>{@link #potencia(int, int)}:</em></h3>
+ * 				<ul>
+ * 					<li>
+ * 						M&eacutetodo para la potencia.
+ * 					</li>
+ * 				</ul>
+ * 			</li>	
+ *		</ol>
+ *</p>
+ *<hr>
+ *<h2>Casos especiales:</h2>
+ *<ol>
+ *	<li><p>Utilizaci&oacuten de n&uacutemeros negativos no permitidos:</p>
+ * 		Si uno de los n&uacutemeros pasados es negativo se lanzara una excepci&oacuten
+ *		ya que realiza operaciones b&aacutesicas de multiplicaci&oacuten de n&uacutemeros positivos.
+ * 	</li>
+ * 	<li><p>Usar caracteres en vez de n&uacutemeros:
+ * 		Si en vez de n&uacutemeros como argumentos se pasan caracteres, se lanzar&aacute
+ * 		una excepci&oacuten ya que lo &uacutenico que est&aacuten permitidos son n&uacutemeros.
+ * 	</li>
+ *</ol>
  * 
  * @author Álvaro Quiles Pomares
  * @version 1.0
- * @since 20-01-2021
+ * @since 20/01/2021
  */
 public class Producto {
 
 	/**
-	 * <b>Producto de dos números reales.</b>
+	 * Constructor por defecto que no recibe ning&uacuten par&aacutemetro.
+	 */
+	public Producto() {
+		
+	}
+	
+	/**
+	 * <b>Producto de dos n&uacutemeros reales.</b>
 	 * @param num1 Primer operando de tipo real.
 	 * @param num2 Segundo operando de tipo real.
 	 * @return Devuelve un double con el resultado de multiplicar 
-	 * los dos números reales pasados al método como argumentos. 
-	 * <br>
-	 * <b>Casos especiales:</b>
-	 * <br>
-	 * <li>Si el primer y/o segundo argumento es 0, el resultado será 0.</li>
+	 * los dos n&uacutemeros reales pasados al m&eacutetodo como argumentos. 
+	 * @exception
+	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un caracter lanzar&aacute una excepci&oacuten
+	 * 		indicando el error.
+	 * @exception
+	 * 		IOException Si en uno de los par&aacutemetros se pasa un n&uacutemero negativo lanzar&aacute una excepci&oacuten
+	 * 		indicando el error.
 	 */
 	public static double prodReales(double num1, double num2) {
 		
@@ -29,14 +97,17 @@ public class Producto {
 	}
 	
 	/**
-	 * <b>Producto de dos números enteros.</b>
+	 * <b>Producto de dos n&uacutemeros enteros.</b>
 	 * @param num1 Primer operando de tipo entero.
 	 * @param num2 Segundo operando de tipo entero.
 	 * @return Devuelve un int con el resultado de multiplicar 
-	 * los dos números enteros pasados al método como argumentos. 
-	 * <br>
-	 * <b>Casos especiales:</b>
-	 * <li>Si el primer y/o segundo argumento es 0, el resultado será 0.</li>
+	 * los dos n&uacutemeros enteros pasados al m&eacutetodo como argumentos. 
+	 * @exception
+	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un caracter lanzar&aacute una excepci&oacuten
+	 * 		indicando el error.
+	 * @exception
+	 * 		IOException Si en uno de los par&aacutemetros se pasa un n&uacutemero negativo lanzar&aacute una excepci&oacuten
+	 * 		indicando el error. 
 	 */
 	public static int prodEnteros(int num1, int num2) {
 		
@@ -45,16 +116,18 @@ public class Producto {
 	}
 	
 	/**
-	 * <b>Producto de tres números reales.</b>
+	 * <b>Producto de tres n&uacutemeros reales.</b>
 	 * @param num1 Primer operando de tipo real.
 	 * @param num2 Segundo operando de tipo real.
 	 * @param num3 Tercer operando de tipo real.
 	 * @return Devuelve un double con el resultado de multiplicar 
-	 * los tres números reales pasados al método como argumentos. 
-	 * <br>
-	 * <b>Casos especiales:</b>
-	 * <br>
-	 * <li>Si el primer y/o segundo y/o tercer argumento es 0, el resultado será 0.</li>
+	 * los tres n&uacutemeros reales pasados al m&eacutetodo como argumentos. 
+	 * @exception
+	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un caracter lanzar&aacute una excepci&oacuten
+	 * 		indicando el error.
+	 * @exception
+	 * 		IOException Si en uno de los par&aacutemetros se pasa un n&uacutemero negativo lanzar&aacute una excepci&oacuten
+	 * 		indicando el error.
 	 */
 	public static double prodReales(double num1, double num2, double num3) {
 		
@@ -64,23 +137,30 @@ public class Producto {
 	
 	/**
 	 * <b>Potencia</b>
-	 * @param base Número entero que será la base de la operación.
-	 * @param expo Número entero que será el exponente de la operación.
+	 * @param base N&uacutemero entero que ser&aacute la base de la operaci&oacuten.
+	 * @param expo N&uacutemero entero que ser&aacute el exponente de la operaci&oacuten.
 	 * @return Devuelve un int con el resultado de elevar al argumento
 	 * pasado como base el valor del argumento pasado como exponente.
+	 * @exception
+	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un caracter lanzar&aacute una excepci&oacuten
+	 * 		indicando el error.
+	 * @exception
+	 * 		IOException Si en uno de los par&aacutemetros se pasa un n&uacutemero negativo lanzar&aacute una excepci&oacuten
+	 * 		indicando el error.
+	 * @exception
+	 * 		IOException Si los argumentos pasados provocasen un desbordamiento, se lanzar&aacute una excepci&oacuten
+	 * 		indicando el error.
+	 * @exception
+	 * 		IOException Si el primer y segundo argumento es 0, se lanzar&aacute una excepci&oacuten
+	 * 		indicando el error.
 	 * <br>
 	 * <p>
 	 * <b>Casos especiales:</b>
 	 * <br>
-	 * <li>Si el primer argumento es 0 y el segundo argumento es cualquier número distinto de 0,
-	 * 	 el resultado será 0.</li>
-	 * <li>Si el segundo argumento es 0, el resultado será 1.</li>
-	 * <li>Si el segundo argumento es 1, el resultado será igual al primer argumento.</li>
-	 * <li>Si el primer y segundo argumento es 0, se mostrará un mensaje de error 
-	 *   para que el usuario introduzca operandos válidos.</li>
-	 * <li>Si el segundo argumento es NaN, el resultado será NaN.</li>
-	 * <li>Si el primer argumento es NaN y el segundo argumento es distinto de 0, el resultado será NaN.</li>
-	 * <li>Si los argumentos pasados provocasen un desbordamiento, se mostrará un mensaje de error al usuario.</li>
+	 * <li>Si el primer argumento es 0 y el segundo argumento es cualquier n&uacutemero distinto de 0,
+	 * 	 el resultado ser&aacute 0.</li>
+	 * <li>Si el segundo argumento es 0, el resultado ser&aacute 1.</li>
+	 * <li>Si el segundo argumento es 1, el resultado ser&aacute igual al primer argumento.</li>
 	 */
 	public static int potencia(int base, int expo) {
 		
