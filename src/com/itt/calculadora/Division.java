@@ -112,7 +112,7 @@ public class Division {
 	  * 		Recoge el segundo número entero, que será el divisor de la división,
 	  * 		este número deberá ser <b>distinto de cero</b>. 
 	  * @return
-	  * 		Nos devuelve (retorna) el resultado de la división entre los dos números.
+	  * 		Nos devuelve el resultado de la división entre los dos números, siendo el valor devuelto un número real.
 	  * @exception
 	  * 		IOException Si en uno de los parámetros en vez de un número se introduce un carácter, lanzará una excepción
 	  * 		indicando el error
