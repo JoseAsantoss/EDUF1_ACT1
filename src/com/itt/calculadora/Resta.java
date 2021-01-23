@@ -1,15 +1,15 @@
 package com.itt.calculadora;
 
 /**
- * <h2>Clase Resta:</h2>
- * <p>Clase estática que realiza las operaciones básicas de resta o sustracción en una calculadora,
- * adicionalmente proporciona métodos para guardar y consultar el acumulado de las restas: <br>
- * - resta de dos números <br>
- * - resta de tres números <br>
- * - resta con memoria</br>
- * No está permitido usar números negativos en la resta.</br></p>
+ * <p>Clase est&aacutetica que realiza las operaciones b&aacutesicas de resta o sustracci&oacuten en una calculadora,
+ * adicionalmente proporciona m&eacutetodos para guardar y consultar el acumulado de las restas: <br>
+ * &nbsp&nbsp- resta de dos n&uacutemeros reales <br>
+ * &nbsp&nbsp- resta de dos n&uacutemeros enteros<br>
+ * &nbsp&nbsp- resta de tres n&uacutemeros reales<br>
+ * &nbsp&nbsp- resta con memoria</br>
+ * No est&aacute permitido usar n&uacutemeros negativos en la resta.</p>
  * <hr/>
- * <h3>Métodos que implementa:</h3>
+ * <h3>M&eacutetodos que implementa:</h3>
  * <p>
  * 	<ol>
  * 			<li><h3><em>{@link #Resta()}</em></h3>
@@ -22,35 +22,35 @@ package com.itt.calculadora;
  * 			<li><h3><em>{@link #resReales(double, double)}</em></h3>
  * 				<ul>
  * 					<li>
- * 						Método para la resta de dos números reales.
+ * 						M&eacutetodo para la resta de dos n&uacutemeros reales.
  * 					</li>
  * 				</ul>
  * 			</li>
  * 			<li><h3><em>{@link #resEnteros(int, int)}:</em></h3>
  * 				<ul>
  * 					<li>
- * 						Método para la resta de dos números enteros.
+ * 						M&eacutetodo para la resta de dos n&uacutemeros enteros.
  * 					</li>
  * 				</ul>
  * 			</li>
  * 			<li><h3><em>{@link #resTresReales(double, double, double)}:</em></h3>
  * 				<ul>
  * 					<li>
- * 						Método para la resta de tres números reales.
+ * 						M&eacutetodo para la resta de tres n&uacutemeros reales.
  * 					</li>
  * 				</ul>
  * 			</li>
  * 			<li><h3><em>{@link #resAcumulado(double)}:</em></h3>
  * 				<ul>
  * 					<li>
- * 						Método para la resta con memoria.
+ * 						M&eacutetodo para la resta con memoria.
  * 					</li>
  * 				</ul>
  * 			</li>
  * 			<li><h3><em>{@link #getAcum()}:</em></h3>
  * 				<ul>
  * 					<li>
- * 						Método para poder mostar el resultado de la resta acumulada
+ * 						M&eacutetodo para poder mostar el resultado de la resta acumulada
  * 					</li>
  *	 			</ul>
  * 			</li>
@@ -59,20 +59,20 @@ package com.itt.calculadora;
  *<hr/>
  *<h2>Casos especiales:</h2>
  *<ol>
- *	<li><p>Utilización de números negativos no permitidos:</p>
- * 		Si uno de los números pasados es negativo se lanzará una excepción
- *		ya que realiza operaciones básicas de resta de números positivos.
+ *	<li><p>Utilizaci&oacuten de n&uacutemeros negativos no permitidos:</p>
+ * 		Si uno de los n&uacutemeros pasados es negativo se lanzar&aacute una excepci&oacuten
+ *		ya que realiza operaciones b&aacutesicas de resta de n&uacutemeros positivos.
  * 	</li>
- * 	<li><p>Usar caracteres en vez de números:</p>
- * 		Si en vez de números como argumentos se pasan caracteres, se lanzará
- * 		una excepción ya que lo único que está permitido son números.
+ * 	<li><p>Usar caracteres en vez de n&uacutemeros:</p>
+ * 		Si en vez de n&uacutemeros como argumentos se pasan caracteres, se lanzar&aacute
+ * 		una excepci&oacuten ya que lo &uacutenico que est&aacute permitido son n&uacutemeros.
  * 	</li>
  *</ol>
  *
- * @category Funciones matemáticas
+ * @category Funciones matem&aacuteticas
  * @version 1.0
  * @since 20/01/2021
- * @author Raúl Ruiz Sanz
+ * @author Ra&uacutel Ruiz Sanz
  */
 public class Resta {
 
@@ -82,21 +82,21 @@ public class Resta {
 	private static double acum = 0;
 
 	/**
-	 * Constructor de la clase Resta por defecto, no recibe parámetros
+	 * Constructor de la clase Resta por defecto, no recibe par&aacutemetros
 	 */
 	public Resta() {
 	}
 
 	/**
-	 * Realiza la resta de dos números reales que recibe como argumentos
+	 * Realiza la resta de dos n&uacutemeros reales que recibe como argumentos
 	 * 
 	 * @param num1 este es el minuendo de la resta
 	 * @param num2 este es el sustraendo de la resta
 	 * @return devuelve la resta de num1 menos num2
-	 * @exception IOException Si en uno de los parámetros en vez de un número se pasa un carácter 
-	 * lanzará una excepción indicando el error 
-	 * @exception IOException Si en uno de los parámetros en vez de un número se pasa un número negativo 
-	 * lanzará una excepción indicando el error
+	 * @exception IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un car&aacutecter 
+	 * lanzar&aacute una excepci&oacuten indicando el error 
+	 * @exception IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un n&uacutemero negativo 
+	 * lanzar&aacute una excepci&oacuten indicando el error
 	 */
 	public static double resReales(double num1, double num2) {
 
@@ -104,15 +104,15 @@ public class Resta {
 	}
 
 	/**
-	 * Realiza la resta de dos números enteros que recibe como argumentos
+	 * Realiza la resta de dos n&uacutemeros enteros que recibe como argumentos
 	 * 
 	 * @param num1 este es el minuendo de la resta
 	 * @param num2 este es el sustraendo de la resta
 	 * @return devuelve la resta de num1 menos num2
-	 * @exception IOException Si en uno de los parámetros en vez de un número se pasa un carácter 
-	 * lanzará una excepción indicando el error 
-	 * @exception IOException Si en uno de los parámetros en vez de un número se pasa un número negativo 
-	 * lanzará una excepción indicando el error
+	 * @exception IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un car&aacutecter 
+	 * lanzar&aacute una excepci&oacuten indicando el error 
+	 * @exception IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un n&uacutemero negativo 
+	 * lanzar&aacute una excepci&oacuten indicando el error
 	 */
 	public static int resEnteros(int num1, int num2) {
 
@@ -121,16 +121,16 @@ public class Resta {
 	}
 
 	/**
-	 * Realiza la resta del de tres números reales que recibe como argumentos
+	 * Realiza la resta del de tres n&uacutemeros reales que recibe como argumentos
 	 * 
 	 * @param num1 este es el minuendo de la resta
 	 * @param num2 este es el primer sustraendo de la resta
 	 * @param num3 este es el segundo sustraendo de la resta
 	 * @return devuelve el resultado de la resta de (num1 menos num2) menos num3
-	 * @exception IOException Si en uno de los parámetros en vez de un número se pasa un carácter 
-	 * lanzará una excepción indicando el error 
-	 * @exception IOException Si en uno de los parámetros en vez de un número se pasa un número negativo 
-	 * lanzará una excepción indicando el error
+	 * @exception IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un car&aacutecter 
+	 * lanzar&aacute una excepci&oacuten indicando el error 
+	 * @exception IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un n&uacutemero negativo 
+	 * lanzar&aacute una excepci&oacuten indicando el error
 	 */
 	public static double resTresReales(double num1, double num2, double num3) {
 
@@ -152,7 +152,7 @@ public class Resta {
 	}
 
 	/**
-	 * Devuelve el valor de las restas que hemos ido acumulando con el método
+	 * Devuelve el valor de las restas que hemos ido acumulando con el m&eacutetodo
 	 * {@link #resAcumulado(double)}
 	 * 
 	 * @return Devuelve valor acumulado

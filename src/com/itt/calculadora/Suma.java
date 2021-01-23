@@ -3,8 +3,9 @@ package com.itt.calculadora;
 
 /**
  * <p>Clase est&aacutetica que realiza las operaciones b&aacutesicas de suma en una calculadora: <br>
- * &nbsp&nbsp- suma de dos n&uacutemeros <br>
- * &nbsp&nbsp- suma de tres n&uacutemeros <br>
+ * &nbsp&nbsp- suma de dos n&uacutemeros reales<br>
+ * &nbsp&nbsp- suma de dos n&uacutemeros enteros<br>
+ * &nbsp&nbsp- suma de tres n&uacutemeros reales<br>
  * &nbsp&nbsp- suma con memoria<br>
  * No est&aacute permitido usar n&uacutemeros negativos en la suma. Su uso inducir&aacute a un error
  * en la aplicaci&oacuten</p>
